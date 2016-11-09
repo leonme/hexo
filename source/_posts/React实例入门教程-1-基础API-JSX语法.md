@@ -3,6 +3,11 @@ title: React实例入门教程(1)基础API,JSX语法
 date: 2016-11-07 15:51:47
 comments: true
 categories: HTML5
+tags:
+- React
+- HTML5
+
+
 ---
 
 #React实例入门教程(1)基础API,JSX语法

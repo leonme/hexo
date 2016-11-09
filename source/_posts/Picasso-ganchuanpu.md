@@ -3,6 +3,12 @@ title: Picasso ganchuanpu
 date: 2016-11-07 15:51:48
 comments: true
 categories: HTML5
+tags:
+- HTML5
+- 图片
+
+
+
 ---
 
 #Picasso ganchuanpu
@@ -51,77 +57,77 @@ Picasso.with(mContext) .load(Constants.IMAGES[position]) .placeholder(R.drawable
 ![picture](http://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif)
 
 ```java
- 1 public class PicassoUtil {
- 2     //加载本地图片
- 3     public static void setImg(Context context, int resId, ImageView imgView){
- 4         Picasso.with(context)
- 5                 .load(resId)
- 6                 .config(Bitmap.Config.RGB_565)//8位RGB位图
- 7                 .fit()
- 8                 .into(imgView);
- 9     }
-10     //按照一定的宽高加载本地图片，带有加载错误和默认图片
-11     public static void setImg(Context context,int resId,ImageView imgView,int weight,int height){
-12         Picasso.with(context)
-13                 .load(resId)//加载本地图片
-14                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-15                 .resize(weight,height)//设置图片的宽高
-16                 .into(imgView);//把图片加载到控件上
-17     }
-18     //加载网络图片到imgview,带有加载错误和默认图片
-19     public static void setImg(Context context, String imgurl, int resId, ImageView imgView){
-20         Picasso.with(context)
-21                 .load(imgurl)//加载网络图片的url
-22                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-23                 .placeholder(resId)//默认图片
-24                 .error(resId)//加载错误的图片
-25                 .fit()//图片的宽高等于控件的宽高
-26                 .into(imgView);//把图片加载到控件上
-27     }
-28     public static void setImg(Context context, String imgurl, ImageView imgView){
-29         Picasso.with(context)
-30                 .load(imgurl)//加载网络图片的url
-31                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-32                 .fit()//图片的宽高等于控件的宽高
-33                 .into(imgView);//把图片加载到控件上
-34     }
-35     //加载网络图片到Viewpager
-36     public static void setImg(Context context, String imgurl, ViewPager imgView){
-37         Picasso.with(context)
-38                 .load(imgurl)//加载网络图片的url
-39                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-40                 .fit()//图片的宽高等于控件的宽高
-41                 .into((Target) imgView);//把图片加载到控件上
-42     }
-43     //加载网络图片到Viewpager，带有加载错误和默认图片
-44     public static void setImg(Context context, String imgurl, int resId, ViewPager imgView){
-45         Picasso.with(context)
-46                 .load(imgurl)//加载网络图片的url
-47                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-48                 .placeholder(resId)//默认图片
-49                 .error(resId)//加载错误的图片
-50                 .fit()//图片的宽高等于控件的宽高
-51                 .into((Target) imgView);//把图片加载到控件上
-52     }
-53     //按照设定的宽高加载网络图片到imgview
-54     public static void setImg(Context context, String imgurl,ImageView imgView,int weight,int height){
-55         Picasso.with(context)
-56                 .load(imgurl)//加载网络图片的url
-57                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-58                 .resize(weight,height)//设置图片的宽高
-59                 .into(imgView);//把图片加载到控件上
-60     }
-61     //按照设定的宽高加载网络图片到imgview，带有加载错误和默认图片
-62     public static void setImg(Context context, String imgurl, int resId,int weight,int height, ImageView imgView){
-63         Picasso.with(context)
-64                 .load(imgurl)//加载网络图片的url
-65                 .config(Bitmap.Config.RGB_565)//8位RGB位图
-66                 .placeholder(resId)//默认图片
-67                 .error(resId)//加载错误的图片
-68                 .resize(weight,height)//设置图片的宽高
-69                 .into(imgView);//把图片加载到控件上
-70     }
-71 }
+public class PicassoUtil {
+    //加载本地图片
+    public static void setImg(Context context, int resId, ImageView imgView){
+        Picasso.with(context)
+                .load(resId)
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .fit()
+                .into(imgView);
+    }
+    //按照一定的宽高加载本地图片，带有加载错误和默认图片
+    public static void setImg(Context context,int resId,ImageView imgView,int weight,int height){
+        Picasso.with(context)
+                .load(resId)//加载本地图片
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .resize(weight,height)//设置图片的宽高
+                .into(imgView);//把图片加载到控件上
+    }
+    //加载网络图片到imgview,带有加载错误和默认图片
+    public static void setImg(Context context, String imgurl, int resId, ImageView imgView){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .placeholder(resId)//默认图片
+                .error(resId)//加载错误的图片
+                .fit()//图片的宽高等于控件的宽高
+                .into(imgView);//把图片加载到控件上
+    }
+    public static void setImg(Context context, String imgurl, ImageView imgView){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .fit()//图片的宽高等于控件的宽高
+                .into(imgView);//把图片加载到控件上
+    }
+    //加载网络图片到Viewpager
+    public static void setImg(Context context, String imgurl, ViewPager imgView){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .fit()//图片的宽高等于控件的宽高
+                .into((Target) imgView);//把图片加载到控件上
+    }
+    //加载网络图片到Viewpager，带有加载错误和默认图片
+    public static void setImg(Context context, String imgurl, int resId, ViewPager imgView){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .placeholder(resId)//默认图片
+                .error(resId)//加载错误的图片
+                .fit()//图片的宽高等于控件的宽高
+                .into((Target) imgView);//把图片加载到控件上
+    }
+    //按照设定的宽高加载网络图片到imgview
+    public static void setImg(Context context, String imgurl,ImageView imgView,int weight,int height){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .resize(weight,height)//设置图片的宽高
+                .into(imgView);//把图片加载到控件上
+    }
+    //按照设定的宽高加载网络图片到imgview，带有加载错误和默认图片
+    public static void setImg(Context context, String imgurl, int resId,int weight,int height, ImageView imgView){
+        Picasso.with(context)
+                .load(imgurl)//加载网络图片的url
+                .config(Bitmap.Config.RGB_565)//8位RGB位图
+                .placeholder(resId)//默认图片
+                .error(resId)//加载错误的图片
+                .resize(weight,height)//设置图片的宽高
+                .into(imgView);//把图片加载到控件上
+    }
+}
 ```
 PicassoUtil 
 ![picture](http://images2015.cnblogs.com/blog/1044471/201611/1044471-20161103225834799-284883798.png)
