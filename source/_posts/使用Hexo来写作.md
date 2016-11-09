@@ -10,7 +10,7 @@ date: 2016-08-27 19:59:55
 Date: 2016-08-27 19:43:00
 ---
 
-![Hexo Pic](http://ockhcbepk.bkt.clouddn.com/hexo_pic.png?watermark/2/text/QOmbtuWjueWNmuWuog==/font/5a6L5L2T/fontsize/700/fill/I0VGRUZFRg==/dissolve/100/gravity/SouthEast/dx/20/dy/20)
+![](http://ockhcbepk.bkt.clouddn.com/hexo_pic.png?watermark/2/text/QOmbtuWjueWNmuWuog==/font/5a6L5L2T/fontsize/700/fill/I0VGRUZFRg==/dissolve/100/gravity/SouthEast/dx/20/dy/20)
 
 >如果一件事成为一种生活的惯性，那是非常可怕的。就像当你徜徉在Windows的各种炫酷的可视化界面中时，你却失去了类似于Linux命令那样的自由。
 
@@ -41,23 +41,23 @@ Date: 2016-08-27 19:43:00
 ## 布局（Layout）
 Hexo 有三种默认布局：**post**、**page** 和 **draft**，它们分别对应不同的路径，而您自定义的其他布局和 **post** 相同，都将储存到 **source/_posts** 文件夹。
 
-| 布局 | 路径 |
-| -- |:--:|
-|post	|source/_posts	|
-|page	|source			|
-|draft	|source/_drafts	|
+| 布局    |       路径       |
+| ----- | :------------: |
+| post  | source/_posts  |
+| page  |     source     |
+| draft | source/_drafts |
 
 ## 文件名称
 Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来改变默认的文件名称，举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章。
 
-| 变量 | 描述 |
-| -- |:--:|
-|:title |标题（小写，空格将会被替换为短杠）|
-|:year |建立的年份，比如， 2015|
-|:month |建立的月份（有前导零），比如， 04|
-|:i_month |建立的月份（无前导零），比如， 4|
-|:day |建立的日期（有前导零），比如， 07|
-|:i_day |建立的日期（无前导零），比如， 7|
+| 变量       |         描述         |
+| -------- | :----------------: |
+| :title   | 标题（小写，空格将会被替换为短杠）  |
+| :year    |   建立的年份，比如， 2015   |
+| :month   | 建立的月份（有前导零），比如， 04 |
+| :i_month | 建立的月份（无前导零），比如， 4  |
+| :day     | 建立的日期（有前导零），比如， 07 |
+| :i_day   | 建立的日期（无前导零），比如， 7  |
 
 ## 草稿
 刚刚提到了 **Hexo** 的一种特殊布局：**draft**，这种布局在建立时会被保存到 **source/_drafts** 文件夹，您可通过 **publish** 命令将草稿移动到 **source/_posts** 文件夹，该命令的使用方式与 **new** 十分类似，您也可在命令中指定 **layout** 来指定布局。
@@ -71,11 +71,11 @@ Hexo 默认以标题做为文件名称，但您可编辑 new_post_name 参数来
 
 在执行这行指令时，**Hexo** 会尝试在 **scaffolds** 文件夹中寻找 **photo.md**，并根据其内容建立文章，以下是您可以在模版中使用的变量：
 
-| 变量 | 描述 |
-| -- |:--:|
-|layout |布局|
-|title |标题|
-|date |文件创建日期|
+| 变量     |   描述   |
+| ------ | :----: |
+| layout |   布局   |
+| title  |   标题   |
+| date   | 文件创建日期 |
 
 # 写在最后
 以上内容仅供参考。
